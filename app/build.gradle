@@ -51,7 +51,8 @@ android {
     }
 }
 
-dependencies {    implementation 'androidx.core:core-ktx:1.7.0'
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation "androidx.compose.ui:ui:$compose_version"
@@ -69,6 +70,7 @@ dependencies {    implementation 'androidx.core:core-ktx:1.7.0'
     implementation("androidx.navigation:navigation-compose:2.4.0-beta02")
 
     // Room components
+    kapt "org.xerial:sqlite-jdbc:3.36.0" // Only for computer with M1 CPU
     implementation "androidx.room:room-runtime:2.3.0"
     kapt "androidx.room:room-compiler:2.3.0"
     implementation "androidx.room:room-ktx:2.3.0"
