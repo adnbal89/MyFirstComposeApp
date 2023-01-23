@@ -3,13 +3,14 @@ package com.aceofhigh.borutoapp.ui.theme
 import androidx.compose.material.Colors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.LightGray
 
 val Purple200 = Color(0xFFBB86FC)
 val Purple500 = Color(0xFF6200EE)
 val Purple700 = Color(0xFF3700B3)
 val Teal200 = Color(0xFF03DAC5)
 
-val ListGray = Color(0xFFD8D808)
+val LightGray = Color(0xFFD8D808)
 val DarkGray = Color(0xFF2A2A2A)
 
 val Colors.welcomeScreenBackgroundColor
@@ -18,9 +19,22 @@ val Colors.welcomeScreenBackgroundColor
 
 val Colors.titleColor
     @Composable
-    get() = if (isLight) DarkGray else ListGray
+    get() = if (isLight) DarkGray else LightGray
 
 val Colors.descriptionColor
     @Composable
     get() = if (isLight) DarkGray.copy(alpha = 0.5f)
-    else ListGray.copy(0.5f)
+    else LightGray.copy(0.5f)
+
+val Colors.activeIndicatorColor
+    @Composable
+    get() = if (isLight) Purple500 else Purple700
+
+val Colors.inactiveIndicatorColor
+    @Composable
+    get() = if (isLight) LightGray else DarkGray
+
+val Colors.buttonBackgroundColor
+    @Composable
+    get() = if (isLight) Purple500 else Purple700
+
