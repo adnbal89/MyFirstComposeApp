@@ -5,7 +5,7 @@ import com.aceofhigh.borutoapp.data.repository.Repository
 class SaveOnBoardingUseCase(
     private val repository: Repository
 ) {
-    suspend operator fun invoke(completed: Boolean){
+    suspend operator fun invoke(completed: Boolean) {
         repository.saveOnBoardingState(completed)
     }
 }

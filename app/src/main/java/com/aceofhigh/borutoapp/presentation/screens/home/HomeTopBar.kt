@@ -1,6 +1,5 @@
 package com.aceofhigh.borutoapp.presentation.screens.home
 
-import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
