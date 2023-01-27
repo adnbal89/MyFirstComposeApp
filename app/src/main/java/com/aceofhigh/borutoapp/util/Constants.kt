@@ -15,5 +15,7 @@ object Constants {
     const val LAST_ON_BOARDING_PAGE = 2
     const val ON_BOARDING_PAGE_COUNT = 3
 
+    const val ITEMS_PER_PAGE = 3
+
 
 }
