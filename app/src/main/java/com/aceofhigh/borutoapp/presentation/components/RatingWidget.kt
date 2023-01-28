@@ -27,7 +27,7 @@ import com.aceofhigh.borutoapp.ui.theme.StarColor
 fun RatingWidget(
     modifier: Modifier,
     rating: Double,
-    scaleFactor: Float = 2.5f,
+    scaleFactor: Float = 2f,
     spaceBetween: Dp = EXTRA_SMALL_PADDING
 ) {
     val result = calculateStars(rating = rating)
