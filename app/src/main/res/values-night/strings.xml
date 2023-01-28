@@ -3,4 +3,6 @@
     <string name="app_logo">App Logo</string>
     <string name="on_boarding_image">On Boarding Image</string>
     <string name="search_icon">Search Icon</string>
+    <string name="star_path">M11.65,44,14.9,29.95,4,20.5l14.4-1.25L24,6l5.6,13.25L44,20.5,33.1,29.95,36.35,44,24,36.55Z</string>
+
 </resources>
