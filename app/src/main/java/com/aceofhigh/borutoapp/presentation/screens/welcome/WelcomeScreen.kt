@@ -126,7 +126,8 @@ fun FinishButton(
     onClick: () -> Unit
 ) {
     Row(
-        modifier = modifier.padding(horizontal = EXTRA_LARGE_PADDING),
+        modifier = modifier
+            .padding(horizontal = EXTRA_LARGE_PADDING),
         verticalAlignment = Alignment.Top,
         horizontalArrangement = Arrangement.Center
     ) {

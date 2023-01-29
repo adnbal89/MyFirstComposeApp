@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import coil.annotation.ExperimentalCoilApi
 import com.aceofhigh.borutoapp.navigation.SetupNavGraph
 import com.aceofhigh.borutoapp.ui.theme.BorutoAppTheme
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -13,6 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @ExperimentalAnimationApi
 @ExperimentalPagerApi
+@ExperimentalCoilApi
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private lateinit var navController: NavHostController
@@ -21,10 +23,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BorutoAppTheme {
-
                 navController = rememberNavController()
                 SetupNavGraph(navController = navController)
-
             }
         }
     }
