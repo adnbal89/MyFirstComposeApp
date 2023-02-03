@@ -9,8 +9,6 @@ import com.aceofhigh.borutoapp.data.local.BorutoDatabase
 import com.aceofhigh.borutoapp.data.remote.BorutoApi
 import com.aceofhigh.borutoapp.domain.model.Hero
 import com.aceofhigh.borutoapp.domain.model.HeroRemoteKeys
-import java.text.SimpleDateFormat
-import java.util.*
 import javax.inject.Inject
 
 @ExperimentalPagingApi
@@ -119,9 +117,9 @@ class HeroRemoteMediator @Inject constructor(
             }
     }
 
-   /* private fun parseMillis(millis: Long): String {
-        val date = Date(millis)
-        val format = SimpleDateFormat("yyyy.MM.dd HH:mm", Locale.ROOT)
-        return format.format(date)
-    }*/
+    /* private fun parseMillis(millis: Long): String {
+         val date = Date(millis)
+         val format = SimpleDateFormat("yyyy.MM.dd HH:mm", Locale.ROOT)
+         return format.format(date)
+     }*/
 }
