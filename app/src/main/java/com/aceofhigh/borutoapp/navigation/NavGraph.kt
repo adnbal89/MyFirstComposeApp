@@ -1,6 +1,7 @@
 package com.aceofhigh.borutoapp.navigation
 
 import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -19,6 +20,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 @ExperimentalAnimationApi
 @ExperimentalPagerApi
 @ExperimentalCoilApi
+@ExperimentalMaterialApi
 @Composable
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
